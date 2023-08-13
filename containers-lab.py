@@ -51,11 +51,10 @@ for item,val in home_town.items():
 
 # Exercise 6
 # Create an empty list named cohort.
-cohort = []
+
 
 # Using a for loop to iterate over the students list.
-for idx,student in students.enumerate():
-    print(idx, student)
+
     
     
 
@@ -68,4 +67,16 @@ for idx,student in students.enumerate():
 #    'fav_food': 'Cheeseburger'
 #  }
 # Iterate over the cohort list, printing out each item (it's not necessary to format the dictionaries).
+
+cohort = []
+
+
+for index, student in enumerate(students):
+    student_dict = {
+        'student': student,
+        'fav_food': foods[index]
+    }
+    cohort.append(student_dict)
+for item in cohort:
+    print(item)
 
