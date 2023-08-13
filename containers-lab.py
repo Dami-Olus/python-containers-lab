@@ -17,3 +17,10 @@ foods = ('orange', 'apple', 'pear', 'mango', 'banana',)
 
 for food in foods:
     print(f"{food} is a good food")
+
+# Exercise 3
+# Using a for loop, print just the last two food strings from foods.
+
+for food in foods[3:]:
+    print(food)
+
