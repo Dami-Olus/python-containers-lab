@@ -48,3 +48,24 @@ print(f"I was born in {home_town['city']}, {home_town['state']} - population of 
 for item,val in home_town.items():
     print(f'{item}={val}')
 
+
+# Exercise 6
+# Create an empty list named cohort.
+cohort = []
+
+# Using a for loop to iterate over the students list.
+for idx,student in students.enumerate():
+    print(idx, student)
+    
+    
+
+# Hint: Use the enumerate function to provide both the index & student
+
+# Within the for loop, add a dictionary to the cohort list that combines the student's name and the food in the foods list at the same index. Each dictionary will have this shape:
+
+#  {
+#    'student': 'Tina',
+#    'fav_food': 'Cheeseburger'
+#  }
+# Iterate over the cohort list, printing out each item (it's not necessary to format the dictionaries).
+
